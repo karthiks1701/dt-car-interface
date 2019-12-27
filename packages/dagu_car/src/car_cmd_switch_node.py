@@ -35,7 +35,7 @@ class CarCmdSwitchNode(DTROS):
         self.sub_fsm_state = self.subscriber(rospy.get_param("~mode_topic"),FSMState,self.cbFSMState)
 
         self.sub_dict = dict()
-        for src_name, topic_name in source_topic_dict.items():
+        for src_name, topic_name in list(source_topic_dict.items()):
             self.sub_dict[src_name] = self.subscriber(topic_name,Twist2DStamped,self.cbWheelsCmd,callback_args=src_name)
 
         self.log("Initialized. ")
