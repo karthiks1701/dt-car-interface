@@ -1,4 +1,4 @@
-FROM duckietown/dt-car-interface:daffy
+FROM duckietown/dt-car-interface:ente
 
 RUN apt-get update; apt-get install -y git
 
