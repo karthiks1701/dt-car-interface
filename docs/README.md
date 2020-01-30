@@ -16,3 +16,5 @@ Once the image is ready, you can finally build the docs by using it:
 Note that for these commands to run correctly you need to run them from the parent folder (the repository folder), not from within `docs\`.
 
 The resulting `html` code should be now available under `docs/build`.
+
+TODO: 2
